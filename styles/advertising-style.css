@@ -1,0 +1,44 @@
+.advertising {
+  display: inline-block;
+  background-color: #138d75;
+  padding: 10px;
+}
+.advertising .contenido {
+  display: inline;
+}
+.advertising .contenido .buscador {
+  font-family: Times;
+  font-size: 20px;
+}
+.advertising .contenido p input {
+  width: 170px;
+}
+.advertising .contenido p select {
+  width: 150px;
+}
+.advertising .contenido .mostrador {
+  background: blue;
+  display: flex;
+}
+.advertising .contenido .mostrador .list {
+  list-style: none;
+  background: green;
+}
+.advertising .contenido .mostrador .list li {
+  background: yellow;
+  clear: both;
+  height: 115px;
+  border: solid #5B6DCD 5px;
+}
+.advertising .contenido .mostrador .list li .thumb {
+  float: left;
+  height: 100px;
+  width: 100px;
+  margin: 0em 1em 1em 0em;
+}
+.advertising .contenido .mostrador .list li .thumbnail {
+  height: 100%;
+  width: 100%;
+}
+
+/*# sourceMappingURL=advertising-style.css.map */

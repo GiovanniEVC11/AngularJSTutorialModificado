@@ -1,0 +1,30 @@
+<aside class="advertising">
+
+  <div class="contenido">
+
+    <div class="buscador">
+      <h2> Publicidad (Componente) </h2>
+      <p> Buscar <input type="text" ng-model="$ctrl.query"> </p>
+      <p> Orden por
+        <select ng-model="$ctrl.priority">
+            <option value="name" selected> Nombre </option>
+            <option value="saleNumber"> Ventas </option>
+        </select>
+      </p>
+    </div>
+
+    <div class="mostrador">
+      <ul class="list">
+        <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.priority">
+          <a href="#!/json-lists/{{phone.id}}" class="thumb">
+              <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" class="thumbnail">
+          </a>
+          <p>{{phone.name}}</p>
+          <p>{{phone.snippet}}</p>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+</aside>

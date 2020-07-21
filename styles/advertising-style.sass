@@ -1,0 +1,46 @@
+@import _variables
+
+.advertising
+  display: inline-block
+  background-color: $background-A
+  padding: 10px
+
+  .contenido
+    display: inline
+
+    .buscador
+      font-family: Times
+      font-size: $fontSizeLetter
+
+    p
+      input
+        width: 170px
+      select
+        width: 150px
+
+    .mostrador
+      background: blue
+      display: flex
+
+      .list
+        list-style: none
+        // Ninguna viñeta
+        background: green
+
+        li
+          background: yellow
+          clear: both
+          // Let float elements
+          height: 115px
+          border: solid #5B6DCD 5px
+
+          .thumb
+            float: left
+            height: 100px
+            width: 100px
+            margin: 0em 1em 1em 0em
+            // margin: top rigth botton left
+
+          .thumbnail
+            height: 100%
+            width: 100%

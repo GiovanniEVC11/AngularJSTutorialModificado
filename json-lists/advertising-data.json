@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Nexus S",
+    "snippet": "Fast just got faster with Nexus S.2",
+    "saleNumber": 3,
+    "imageUrl": "advertising/images/NexusS.png"
+  }, {
+    "id": 2,
+    "name": "Motorola G6",
+    "snippet": "The Next, Next Generation tablet.",
+    "saleNumber": 4,
+    "imageUrl": "advertising/images/MotorolaG6.png"
+  }, {
+    "id": 3,
+    "name": "MOTOROLA XOOM™",
+    "snippet": "The Next, Next Generation tablet.",
+    "saleNumber": 1,
+    "imageUrl": "advertising/images/MotorolaXoom.png"
+  }, {
+    "id": 4,
+    "name": "Huawei Y9 2018™",
+    "snippet": "G4 Cellphone in one price oportunity.",
+    "saleNumber": 2,
+    "imageUrl": "advertising/images/HuaweiY92018.png"
+  }
+]
