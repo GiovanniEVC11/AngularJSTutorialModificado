@@ -1,0 +1,32 @@
+{
+  "description": "We sell smart-watches to enjoy your favorite sport",
+  "category": "product",
+  "socialNetworks": {
+      "Facebook": "watchMywatch",
+      "Twitter": "watchMywatch"
+  },
+  "openDays":{
+      "Monday": 0,
+      "Tuesday": 0,
+      "Wendsday": 1,
+      "Thursday": 1,
+      "Friday": 1,
+      "Saturday": 0,
+      "Sunday": 0
+  },
+  "telephone": ["771 564 3778"],
+  "tags": ["watch", "xiaomi", "sony"],
+  "location": {
+     "country": "USA",
+     "state": "Texas",
+     "city": "Alabama",
+     "cp": 48888,
+     "street": "Washingtong",
+     "number": "222"
+  },
+  "imagesDetail": [
+    "advertising/imagesDetail/watch.png",
+    "advertising/imagesDetail/watchTwo.png",
+    "advertising/imagesDetail/watchThree.png"
+    ]
+}

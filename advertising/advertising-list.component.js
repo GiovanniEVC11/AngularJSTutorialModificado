@@ -1,32 +1,23 @@
 'use strict';
 
-angular.module('advertisingListModule')
-.component('advertisingList', {
-      templateUrl: 'advertising/advertising-list.template.html',
-      controller: ['$http', function PhoneListController($http) {
+angular.module('advertisingListModule') // Declaring the Module
+.component('advertisingList', {          // Declaring the Module's Component
+      templateUrl: 'advertising/advertising-list.template.html', // Template to use
+      controller: ['$http', function productListController($http) { // Inject a service to use (http)
           var self = this;
-          self.priority = 'saleNumber';
-/*
-          var type = XMLHttpRequest.responseType; // buscando
-          XMLHttpRequest.responseType = type;  //  ...
+          self.priority = 'saleNumber'; 
 
-          $http.get('json-lists/advertising-data.json').then(function success(response){
-                self.phones = angular.fromJson(response.data); // o bien dicho self.phones = response.data
-            });
-*/
-
-              $http({
-                method: 'GET',
-                url: 'json-lists/advertising-data.json',
-                dataType: 'json',
-                cache: false
-              }).then(
+          // New mode to use HTTP
+          $http({
+              method: 'GET',
+              url: 'json-lists/advertising-data.json',
+              dataType: 'json',
+              cache: false
+          }).then(
                   function successCallback(response){
-                       self.phones = response.data;
+                       self.products = response.data;   // console.log("response: ", response); // console.log("response.data: ", response.data);
                   }, function errorCallback(response){
                       console.log("Error al cargar datos JSON", response);
-                  });
-
-          }
-     ]
+              });
+      }]
 });

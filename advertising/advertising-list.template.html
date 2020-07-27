@@ -6,8 +6,8 @@
       <h2> Publicidad (Componente) </h2>
       <p> Buscar <input type="text" ng-model="$ctrl.query"> </p>
       <p> Orden por
-        <select ng-model="$ctrl.priority">
-            <option value="name" selected> Nombre </option>
+        <select ng-model="$ctrl.priority">  <!-- The model is applied if the option value is the same that the variable of controller -->
+            <option value="name" selected> Nombre </option>   <!-- A model and template are bidirectional at the moment to modify if they have been declared -->
             <option value="saleNumber"> Ventas </option>
         </select>
       </p>
@@ -15,12 +15,12 @@
 
     <div class="mostrador">
       <ul class="list">
-        <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.priority">
-          <a href="#!/json-lists/{{phone.id}}" class="thumb">
-              <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" class="thumbnail">
+        <li ng-repeat="product in $ctrl.products | filter:$ctrl.query | orderBy:$ctrl.priority">  <!-- NG-REPEAT directive works like a FOR (structure control) but it could contain filters and -->
+          <a href="#!/json-lists/detail/{{product.productId}}" class="thumb">
+              <img ng-src="{{product.imageUrl}}" alt="{{product.name}}" class="thumbnail">
           </a>
-          <p>{{phone.name}}</p>
-          <p>{{phone.snippet}}</p>
+          <p>{{product.name}}</p>
+          <p>{{product.snippet}}</p>
         </li>
       </ul>
     </div>

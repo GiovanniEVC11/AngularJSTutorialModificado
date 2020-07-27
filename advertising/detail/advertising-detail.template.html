@@ -1,0 +1,61 @@
+<div class="advertising-detail">
+
+    <div class="trunk">
+
+      <div class="image-box">
+          <img ng-src="{{$ctrl.mainImageUrl }}" class="main-image" /> <!-- Usa una variable creada en el controlador -->
+      </div>
+
+      <ul class="images-detail">
+        <li ng-repeat="image in $ctrl.productsDetail.imagesDetail" class="thumb">
+            <img ng-src="{{ image }}" ng-click="$ctrl.setImage(image)" class="thumbnail" />
+        </li>
+      </ul>
+      <p> {{ $ctrl.productsDetail.description }} </p>
+    </div>
+
+    <ul class="list-details">
+          <li>
+            <h2> Location </h2>
+            <dl>
+                <dt>Country</dt> <dd> {{ $ctrl.productsDetail.location.country }} </dd>
+                <dt>State</dt> <dd> {{ $ctrl.productsDetail.location.state }} </dd>
+                <dt>City</dt> <dd> {{ $ctrl.productsDetail.location.city }} </dd>
+                <dt>C.P.</dt> <dd> {{ $ctrl.productsDetail.location.cp }} </dd>
+                <dt>Street</dt> <dd> {{ $ctrl.productsDetail.location.street }} </dd>
+                <dt>Number</dt> <dd> {{ $ctrl.productsDetail.location.number }} </dd>
+              </dl>
+          </li>
+
+          <li>
+              <h2> Tags </h2>
+              <dl>
+                  <dd ng-repeat="tag in $ctrl.productsDetail.tags"> {{ tag }} </dd>
+              </dl>
+          </li>
+
+          <li>
+              <h2> Social Networks </h2>
+              <dl>
+                  <dt>Facebook</dt> <dd> {{ $ctrl.productsDetail.socialNetworks.Facebook }} </dd>
+                  <dt>Twitter</dt> <dd> {{ $ctrl.productsDetail.socialNetworks.Twitter }} </dd>
+              </dl>
+          </li>
+
+          <li>
+              <h2> Days Opened </h2>
+              <dl>
+                  <dt>Monday</dt> <dd> {{ $ctrl.productsDetail.openDays.Monday | checkmark }} </dd>
+                  <dt>Tuesday</dt> <dd> {{ $ctrl.productsDetail.openDays.Tuesday | checkmark}} </dd>
+                  <dt>Wendsday</dt> <dd> {{ $ctrl.productsDetail.openDays.Wendsday | checkmark }} </dd>
+                  <dt>Thursday</dt> <dd> {{ $ctrl.productsDetail.openDays.Thursday | checkmark }} </dd>
+                  <dt>Friday</dt> <dd> {{ $ctrl.productsDetail.openDays.Friday | checkmark }} </dd>
+                  <dt>Saturday</dt> <dd> {{ $ctrl.productsDetail.openDays.Saturday | checkmark }} </dd>
+                  <dt>Sunday</dt> <dd> {{ $ctrl.productsDetail.openDays.Sunday | checkmark }} </dd>
+              </dl>
+          </li>
+
+      </ul>
+
+
+</div>

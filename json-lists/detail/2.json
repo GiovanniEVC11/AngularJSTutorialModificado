@@ -1,0 +1,32 @@
+{
+  "description": "Our service help to give food around our comunity",
+  "category": "service and product",
+  "socialNetworks": {
+      "Facebook": "OrderFoodTT",
+      "Twitter": "OrderFoodTT"
+  },
+  "openDays":{
+      "Monday": 0,
+      "Tuesday": 1,
+      "Wendsday": 0,
+      "Thursday": 1,
+      "Friday": 0,
+      "Saturday": 1,
+      "Sunday": 0
+  },
+  "telephone": ["771 266 5432"],
+  "tags": ["food", "Racncho la colonia", "hamburger"],
+  "location": {
+     "country": "Mexico",
+     "state": "Mexico",
+     "city": "Nezahualcoyotl",
+     "cp": 42243,
+     "street": "Av. Mexico",
+     "number": "200B"
+  },
+  "imagesDetail": [
+    "advertising/imagesDetail/food.png",
+    "advertising/imagesDetail/foodTwo.png",
+    "advertising/imagesDetail/foodThree.png"
+    ]
+}

@@ -1,0 +1,73 @@
+.advertising-detail
+    display: flex
+    // Se puede cambiar para la version movil
+    flex-direction: column
+    background: gray
+    // Alineacion de elemento
+    justify-content: center
+
+    // Bloque de Fotos y descripcion
+    .trunk
+      background: #E9967A
+      display: inline-flex
+      flex-direction: column
+      justify-content: space-between
+
+      .image-box
+        height: 50%
+        width: 50%
+
+        // Principal Imagen
+        .main-image
+          height: 100%
+          width: 100%
+          border: 2px solid black
+          border-style: double
+          border-radius: 50px
+
+      // Listado de imagenes
+      .images-detail
+        list-style: none
+
+        // Elemento de contenedor imagen
+        .thumb
+          display: inline-block
+          margin: 10px
+          height: 100px
+          width: 100px
+
+          // Imagen
+          .thumbnail
+            border: 2px solid black
+            border-style: double
+            border-radius: 25px
+            height: 100%
+            width: 100%
+
+    // Bloque de elementos con los detalles
+    .list-details
+      background: blue
+      display: flex
+      flex-direction: column
+      // Alineacion de elemento
+      justify-content: space-around
+      // Mueve los elementos si se mueve el tamaño de la ventana
+      flex-wrap: wrap
+
+      li
+        background: #C0C0C0
+        display: inline-block
+        padding: 5px
+        margin: 10px
+
+        dl
+          background: yellow
+
+          dt::after
+            content: ":"
+            margin-right: 5px
+
+          dt
+            float: left
+            clear: left
+            font-weight: bold

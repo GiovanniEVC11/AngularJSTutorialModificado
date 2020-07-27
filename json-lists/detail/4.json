@@ -1,0 +1,33 @@
+{
+  "description": "We sell our products just in Mexico City a good price",
+  "category": "product",
+  "socialNetworks": {
+      "Facebook": "materialG",
+      "Twitter": "materialG"
+  },
+  "openDays":{
+      "Monday": 0,
+      "Tuesday": 1,
+      "Wendsday": 1,
+      "Thursday": 0,
+      "Friday": 1,
+      "Saturday": 1,
+      "Sunday": 0
+  },
+  "telephone": ["771 444 3455"],
+  "tags": ["grava", "piedra gris", "cemento", "tabique"],
+  "location": {
+     "country": "Mexico",
+     "state": "Ciudad de Mexico",
+     "city": "Ciudad de Mexico",
+     "cp": 42338,
+     "street": "Marte Uno",
+     "number": "343"
+  },
+  "imagesDetail": [
+    "advertising/imagesDetail/material.png",
+    "advertising/imagesDetail/materialTwo.png",
+    "advertising/imagesDetail/materialThree.png",
+    "advertising/imagesDetail/materialFour.png"
+    ]
+}

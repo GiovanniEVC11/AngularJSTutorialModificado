@@ -1,0 +1,32 @@
+{
+  "description": "This is a bussiness that take care your smile becuase that is our commitment",
+  "category": "service",
+  "socialNetworks": {
+      "Facebook": "GVDental",
+      "Twitter": "GVDentalPOO"
+  },
+  "openDays":{
+      "Monday": 1,
+      "Tuesday": 0,
+      "Wendsday": 1,
+      "Thursday": 0,
+      "Friday": 1,
+      "Saturday": 0,
+      "Sunday": 1
+  },
+  "telephone": ["771 289 4512"],
+  "tags": ["cirujano dentista", "odontologia", "estudios odontologicos"],
+  "location": {
+     "country": "Mexico",
+     "state": "Hidalgo",
+     "city": "Pachuca",
+     "cp": 42098,
+     "street": "Roma",
+     "number": "100"
+  },
+  "imagesDetail": [
+    "advertising/imagesDetail/dental.png",
+    "advertising/imagesDetail/dentalTwo.png",
+    "advertising/imagesDetail/dentalThree.png"
+    ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "mandarin2",
+  "version": "2.0.1",
+  "description": "Esta es la version estandar de desarrollo ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giovanniCBTis/pruebaAjsCap8.git"
+  },
+  "dependencies": {
+    "angular": "1.8.x",
+    "angular-resource": "1.8.x",
+    "angular-route": "1.8.x",
+    "bootstrap": "3.3.x"
+  },
+  "keywords": [
+    "capitulo8",
+    "capituloOcho",
+    "pruebaNPM",
+    "pruebaNodeJS"
+  ],
+  "author": "Giovanni Efrain Villanueva Caballero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giovanniCBTis/pruebaAjsCap8/issues"
+  },
+  "homepage": "https://github.com/giovanniCBTis/pruebaAjsCap8#readme"
+}
