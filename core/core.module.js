@@ -1,3 +1,5 @@
 'use strict';
 
-angular.module('core', []);
+angular.module('core', ['core.productModule']);
+
+// Se añade una dependencia

@@ -7,7 +7,7 @@ angular.module('PrimerModulo').   // Module associated to set up
         when('/json-lists', {
           template: '<advertising-list> <advertising-list>'  // Show the main advertasing template
         }).
-        when('/json-lists/detail/:productId', {                    // : mans that receives a variable 
+        when('/json-lists/:productId', {                    // : mans that receives a variable 
           template: '<advertising-detail> <advertising-detail>'  // show details about the product selected
         }).
         otherwise('/json-lists');

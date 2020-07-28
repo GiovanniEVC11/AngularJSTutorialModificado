@@ -6,14 +6,20 @@ angular.
   module('advertisingDetailModule').
   component('advertisingDetail', {
     templateUrl: 'advertising/detail/advertising-detail.template.html',
-    controller: ['$http','$routeParams',
-      function advertisingDetailController($http, $routeParams) {
+    controller: ['$routeParams', 'ProductFactory',
+      function advertisingDetailController($routeParams, ProductFactory) {
         var self = this;
+
+        self.productsDetail = ProductFactory.get({productId:$routeParams.productId},
+        function(productsDetail){
+            self.setImage(productsDetail.imagesDetail[0]);
+        });
 
         self.setImage = function setImage(imageUrl){
             self.mainImageUrl = imageUrl;
         };
 
+/*
         var req = {
             method: 'GET',
             url: 'json-lists/detail/'+$routeParams.productId+'.json',
@@ -31,6 +37,7 @@ angular.
                 }, function errorCallback(response){
                     console.log("Error al cargar datos JSON", response);
             });
+*/
 
       } // Close controller function
     ] // Close controller

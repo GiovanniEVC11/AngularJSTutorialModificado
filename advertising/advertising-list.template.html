@@ -15,8 +15,8 @@
 
     <div class="mostrador">
       <ul class="list">
-        <li ng-repeat="product in $ctrl.products | filter:$ctrl.query | orderBy:$ctrl.priority">  <!-- NG-REPEAT directive works like a FOR (structure control) but it could contain filters and -->
-          <a href="#!/json-lists/detail/{{product.productId}}" class="thumb">
+        <li ng-repeat="product in $ctrl.products | filter:$ctrl.query | orderBy:$ctrl.priority" class="list-item">  <!-- NG-REPEAT directive works like a FOR (structure control) but it could contain filters and -->
+          <a href="#!/json-lists/{{product.productId}}" class="thumb">
               <img ng-src="{{product.imageUrl}}" alt="{{product.name}}" class="thumbnail">
           </a>
           <p>{{product.name}}</p>

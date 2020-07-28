@@ -4,6 +4,7 @@
   "description": "Esta es la version estandar de desarrollo ",
   "main": "index.html",
   "scripts": {
+    "copy-libs": "cpx \"node_modules/{angular,angular-*,bootstrap/dist,jquery/dist}/**/*\" app/lib -C",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,7 +15,9 @@
     "angular": "1.8.x",
     "angular-resource": "1.8.x",
     "angular-route": "1.8.x",
-    "bootstrap": "3.3.x"
+    "bootstrap": "3.3.x",
+    "angular-animate": "1.8.x",
+    "jquery": "3.5.x"
   },
   "keywords": [
     "capitulo8",

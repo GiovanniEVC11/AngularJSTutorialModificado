@@ -1,7 +1,7 @@
 .advertising-detail {
   display: flex;
-  flex-direction: column;
-  background: gray;
+  flex-direction: row;
+  background: white;
   justify-content: center;
 }
 .advertising-detail .trunk {
