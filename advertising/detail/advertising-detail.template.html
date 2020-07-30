@@ -1,17 +1,15 @@
 <section class="advertising-detail">
-
     <div class="trunk">
 
       <div class="image-box">
           <img ng-src="{{$ctrl.mainImageUrl }}" class="main-image" /> <!-- Usa una variable creada en el controlador -->
       </div>
-
+      <p> {{$ctrl.productsDetail.description}} </p>
       <ul class="images-detail">
         <li ng-repeat="image in $ctrl.productsDetail.imagesDetail" class="thumb">
             <img ng-src="{{ image }}" ng-click="$ctrl.setImage(image)" class="thumbnail" />
         </li>
       </ul>
-      <p> {{ $ctrl.productsDetail.description }} </p>
     </div>
 
     <ul class="list-details">

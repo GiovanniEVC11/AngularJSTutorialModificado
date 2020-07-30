@@ -1,18 +1,18 @@
 .advertising-detail {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   background: white;
-  justify-content: center;
 }
 .advertising-detail .trunk {
   background: #E9967A;
   display: inline-flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
 }
 .advertising-detail .trunk .image-box {
-  height: 50%;
-  width: 50%;
+  height: 170px;
+  width: 170px;
+  background: #00aa55;
 }
 .advertising-detail .trunk .image-box .main-image {
   height: 100%;
@@ -21,17 +21,24 @@
   border-style: double;
   border-radius: 50px;
 }
+.advertising-detail .trunk p {
+  background: #00aa00;
+}
 .advertising-detail .trunk .images-detail {
   list-style: none;
+  background: #00aaaa;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
 }
 .advertising-detail .trunk .images-detail .thumb {
-  display: inline-block;
   margin: 10px;
   height: 100px;
   width: 100px;
 }
 .advertising-detail .trunk .images-detail .thumb .thumbnail {
-  border: 2px solid black;
+  border: 2px none black;
   border-style: double;
   border-radius: 25px;
   height: 100%;
@@ -39,8 +46,8 @@
 }
 .advertising-detail .list-details {
   background: blue;
-  display: flex;
-  flex-direction: column;
+  display: inline-flex;
+  flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
 }

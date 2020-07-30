@@ -1,7 +1,7 @@
-.view-container {
+/*.view-container {
   position: relative;
 }
-
+*/
 .view-frame.ng-enter,
 .view-frame.ng-leave {
   background: white;

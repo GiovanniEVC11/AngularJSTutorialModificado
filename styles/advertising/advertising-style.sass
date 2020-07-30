@@ -1,46 +1,52 @@
 @import _variables
 
 .advertising
-  display: inline-block
+  display: inline-flex
+  flex-direction: column
   background-color: $background-A
   padding: 10px
+  border: 2px none
+  border-radius: 20px
 
-  .contenido
-    display: inline
+  .buscador
+    display: inline-flex
+    flex-direction: column
+    line-height: 1vw
 
-    .buscador
-      font-family: Times
-      font-size: $fontSizeLetter
-
+    h2
+      line-height: inherit
     p
+      display: inline-flex
+      flex-direction: row
+      line-height: inherit
+
       input
-        width: 170px
+        width: 100%
       select
-        width: 150px
+        width: 100%
 
-    .mostrador
-      background: blue
-      display: flex
+  .mostrador
+    display: flex
+    flex-direction: column
+    // Ninguna viñeta
+    list-style: none
+    margin: 0
+    padding: 0
 
-      .list
-        list-style: none
-        // Ninguna viñeta
-        background: green
+    li
+      clear: both
+      // Let float elements
+      margin-top: 10px
+      border: solid black 2px
+      border-radius: 20px
 
-        li
-          background: yellow
-          clear: both
-          // Let float elements
-          height: 115px
-          border: solid #5B6DCD 5px
+      .thumb
+        float: left
+        padding: 5px
+        height: 100px
+        width: 100px
+        // margin: top rigth botton left
 
-          .thumb
-            float: left
-            height: 100px
-            width: 100px
-            margin: auto
-            // margin: top rigth botton left
-
-          .thumbnail
-            height: 100%
-            width: 100%
+        .thumbnail
+          height: 100%
+          width: 100%

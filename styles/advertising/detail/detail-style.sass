@@ -1,21 +1,20 @@
+
 .advertising-detail
-    display: flex
-    // Se puede cambiar para la version movil
+    display: inline-flex
     flex-direction: row
     background: white
-    // Alineacion de elemento
-    justify-content: center
 
     // Bloque de Fotos y descripcion
     .trunk
       background: #E9967A
       display: inline-flex
       flex-direction: column
-      justify-content: space-between
+      align-items: center
 
       .image-box
-        height: 50%
-        width: 50%
+        height: 170px
+        width: 170px
+        background: #00aa55
 
         // Principal Imagen
         .main-image
@@ -25,20 +24,26 @@
           border-style: double
           border-radius: 50px
 
+      p
+        background: #00aa00
       // Listado de imagenes
       .images-detail
         list-style: none
+        background: #00aaaa
+        display: inline-flex
+        flex-wrap: wrap
+        justify-content: center
+        margin: auto
 
         // Elemento de contenedor imagen
         .thumb
-          display: inline-block
           margin: 10px
           height: 100px
           width: 100px
 
           // Imagen
           .thumbnail
-            border: 2px solid black
+            border: 2px none black
             border-style: double
             border-radius: 25px
             height: 100%
@@ -47,8 +52,8 @@
     // Bloque de elementos con los detalles
     .list-details
       background: blue
-      display: flex
-      flex-direction: column
+      display: inline-flex
+      flex-direction: row
       // Alineacion de elemento
       justify-content: space-around
       // Mueve los elementos si se mueve el tamaño de la ventana

@@ -1,42 +1,50 @@
 .advertising {
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
   background-color: #138d75;
   padding: 10px;
+  border: 2px none;
+  border-radius: 20px;
 }
-.advertising .contenido {
-  display: inline;
+.advertising .buscador {
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 1vw;
 }
-.advertising .contenido .buscador {
-  font-family: Times;
-  font-size: 20px;
+.advertising .buscador h2 {
+  line-height: inherit;
 }
-.advertising .contenido p input {
-  width: 170px;
+.advertising .buscador p {
+  display: inline-flex;
+  flex-direction: row;
+  line-height: inherit;
 }
-.advertising .contenido p select {
-  width: 150px;
+.advertising .buscador p input {
+  width: 100%;
 }
-.advertising .contenido .mostrador {
-  background: blue;
+.advertising .buscador p select {
+  width: 100%;
+}
+.advertising .mostrador {
   display: flex;
-}
-.advertising .contenido .mostrador .list {
+  flex-direction: column;
   list-style: none;
-  background: green;
+  margin: 0;
+  padding: 0;
 }
-.advertising .contenido .mostrador .list li {
-  background: yellow;
+.advertising .mostrador li {
   clear: both;
-  height: 115px;
-  border: solid #5B6DCD 5px;
+  margin-top: 10px;
+  border: solid black 2px;
+  border-radius: 20px;
 }
-.advertising .contenido .mostrador .list li .thumb {
+.advertising .mostrador li .thumb {
   float: left;
+  padding: 5px;
   height: 100px;
   width: 100px;
-  margin: auto;
 }
-.advertising .contenido .mostrador .list li .thumbnail {
+.advertising .mostrador li .thumb .thumbnail {
   height: 100%;
   width: 100%;
 }
